@@ -1,6 +1,6 @@
 # projet_os_user_sherlock13
 
-Ce document décrit pas-à-pas comment compiler, lancer et tester le serveur et les clients de ce projet Sherlock13 (jeu de déduction collaboratif). Il couvre :
+Ce document décrit pas-à-pas comment compiler, lancer et tester le serveur et les clients de ce projet Sherlock13 . Il couvre :
 
 Prérequis
 
@@ -12,11 +12,9 @@ Lancement des clients
 
 Tests fonctionnels
 
-Debug et logs
-
 1. Prérequis
 
-Système : Linux (Ubuntu/Debian recommandées)
+Système : Linux 
 
 Compilateur : gcc (>= 9.0)
 
