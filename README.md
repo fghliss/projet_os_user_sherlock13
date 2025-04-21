@@ -10,7 +10,10 @@ Lancement du serveur
 
 Lancement des clients
 
+Makefile et raccourcis
+
 Tests fonctionnels
+
 
 1. Prérequis
 
@@ -65,3 +68,63 @@ Dans un terminal, exécutez :
 ./server 5000
 
 Le serveur affiche alors le deck mélangé et attend les connexions des clients.
+
+5. Usage du Makefile
+
+Un Makefile est disponible pour automatiser :
+
+make ou make all : compile via ./cmd.sh.
+
+make server : compile server.c.
+
+make sh13 : compile sh13.c.
+
+make clean : supprime server et sh13.
+
+make run-server : lance ./server 5000.
+
+make run-clients : démarre 4 clients SDL en local (Alice, Bob, Carol, Dave).
+
+
+6. Tests fonctionnels clés
+
+Étape
+
+Résultat attendu
+
+4 clients connectés
+
+Serveur affiche 4 logs COM=C … name=X
+
+Distribution cartes (D …) et grille (V …)
+
+Chaque client voit `consomme
+
+D …
+
+puis 32×consomme
+
+V …
+
+`
+
+Serveur broadcast M 0
+
+Client ID=0 affiche `consomme
+
+M 0
+
+` et bouton Go activé
+
+Clic Go (client 0) sur O, S ou G
+
+Serveur log Received packet… Data: […], broadcast V et M 1 ; client 0 Go désactivé, client 1 activé
+
+Accusation correcte (G)
+
+Tous recoivent W <id> <culprit>, la partie se termine et SDL se ferme
+
+
+
+
+
