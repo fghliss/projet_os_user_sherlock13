@@ -15,7 +15,9 @@ Makefile et raccourcis
 Tests fonctionnels
 
 
-#1. Prérequis
+
+
+1. Prérequis
 
 Système : Linux 
 
