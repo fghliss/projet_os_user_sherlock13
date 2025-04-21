@@ -87,12 +87,9 @@ Cliquez sur **Connect** dans chaque fenêtre SDL.
 
 Le dépôt inclut un **Makefile** :  
 
-- `make` / `make all`   → compile via `./cmd.sh`  
-- `make server`        → compile `server` seul  
-- `make sh13`          → compile `sh13` seul  
-- `make clean`         → supprime `server` et `sh13`  
-- `make run-server`    → lance `./server 5000`  
-- `make run-clients`   → démarre 4 clients SDL en local (Alice→Dave)
+- make ou make all → compile les deux exécutables server et sh13
+
+- make clean        → supprime server et sh13
 
 ## 6. Tests fonctionnels clés
 
